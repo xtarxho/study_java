@@ -34,18 +34,16 @@ public class Ex1_work {
          * 단, 고기 양을 담는 변수는 int, 평균을 계산할 변수는 float를 사용한다.
          */
 
-            int tiger = 8;
-            int lion = 6;
-            int bear = 4;
-            int total = tiger + lion + bear;
-            float avg = total/24f;
-            System.out.println("하루고기양 : " + total);
-            System.out.println("시간당 평균: " + avg);
+        int tiger = 8;
+        int lion = 6;
+        int bear = 4;
+        int total = tiger + lion + bear;
+        float avg = total / 24f;
+        System.out.println("하루고기양 : " + total);
+        System.out.println("시간당 평균: " + avg);
 
-            float check = avg * 24;
-            System.out.println("확인 : " + check);
-
-
+        float check = avg * 24;
+        System.out.println("확인 : " + check);
 
         /*
          * 3번째 문제 - 빵집이 있다.
@@ -57,5 +55,18 @@ public class Ex1_work {
          * 
          */
 
+        
+        /*
+         * [응용 연습문제]
+         * 
+         * 우리 동네 과수원에서는 하루에 배, 사과, 오렌지, 그리고 바나나를 생산하고 있다.
+         * 각 과일의 하루 생산량은 각각 8개, 12개, 7개, 10개이다.
+         * 
+         * 1. 하루에 생산되는 과일의 총 갯수를 변수에 저장하고 출력하시오.
+         * 2. 30분(0.5시간)마다 생산되는 전체 과일의 평균 갯수를 구하여 출력하시오.
+         * 3. 하루 총 생산량의 절반 이상을 차지하는 과일이 무엇인지(과일 이름) 구해서 출력하시오.
+         * 
+         * (단, 변수의 자료형은 적절하게 선택한다.)
+         */
     }
 }
