@@ -4,7 +4,7 @@ public class Ex2_valueType {
     public static void main(String[] args) {
         //문자형 : 홅따옴표 안에 딱 한글자만 저장할 수 있는 자료형
         char ch = 'A';
-        char ch2 = 65 + 1;
+        char ch2 = 'A' + 1;
         System.out.println("ch : " + ch2);
 
         //실수형 : 소수점을 포함하는 값을 저장하기 위한 자료형

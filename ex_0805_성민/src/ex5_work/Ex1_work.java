@@ -68,5 +68,17 @@ public class Ex1_work {
          * 
          * (단, 변수의 자료형은 적절하게 선택한다.)
          */
+
+        int pear = 8;
+        int apple = 12;
+        int orange = 7;
+        int banana = 10;
+
+        int total2 = pear + apple + orange + banana;
+        float avg2 = total2 / 24F / 2F;
+
+        System.out.println(total2);
+        System.out.println(avg2);
+
     }
 }

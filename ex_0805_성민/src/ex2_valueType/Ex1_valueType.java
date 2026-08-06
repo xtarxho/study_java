@@ -55,7 +55,7 @@ public class Ex1_valueType {
        b1 = true; //대입
        b1 = false;
        //b1 = 10; -> 자료형 타입이 올바르지 않기때문에 오류발생
-       System.out.println("b1 : " + b1);
+       System.out.println("b1 : " + b1);  // -> 항상 마지막에 대입한 값이 저장됨
 
        //정수형 : 소수점이 없는 정수값만 저장하는 자료형
        byte b = 127;

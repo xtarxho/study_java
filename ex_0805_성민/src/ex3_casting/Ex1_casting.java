@@ -10,6 +10,8 @@ public class Ex1_casting {
         d1 = n1;   //대입
         System.out.println("d1 : " + d1);
 
+        
+
         int n2 = 100; //4byte
         char ch ='A'; //2byte
         n2 = ch;
