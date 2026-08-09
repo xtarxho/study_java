@@ -10,6 +10,12 @@ public class Ex2_oper {
         n2 += n1; //n2 = n2 + n1;
         System.out.println("n2 : " + n2);
 
+        int k1 = 45;
+        int d1 = 10;
+        d1 += k1;
+        System.out.println(d1);
+
+
         n2 -= 2; //n2 = n2 - 2;
         System.out.println("n2 : " + n2);
 
