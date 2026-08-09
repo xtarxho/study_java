@@ -21,22 +21,37 @@ public class Ex2_work {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print( "단 : ");
+        System.out.print("단 : ");
         int dan = sc.nextInt();
-        
-        
-        //모르겠음
-       for( int i = 1; i <= 9; i++ ){
-            System.out.println(dan + "*" + i + "=" + dan * i);
-       }
 
+        for( int i = 1; i <= 9; i++ ){
+            System.out.println(dan+"*"+i+"="+ dan*i  );
+
+        }
 
             
         
         
 
 
+        // 1. 키보드에서 두 개의 정수를 입력받아, 두 수의 합, 차, 곱, 몫, 나머지를 출력하는 프로그램을 작성하세요.
+        Scanner sc1 = new Scanner(System.in);
 
+        System.out.print("수1 : ");
+        int a = sc1.nextInt();
+
+        System.out.print("수2 : ");
+        int b = sc1.nextInt();
+
+        System.out.println( a + "+" + b + "=" + (a+b) );
+        System.out.println( a + "-" + b + "=" + (a-b) );
+        System.out.println( a + "*" + b + "=" + a*b );
+        System.out.println( a + "/" + b + "=" + a/b );
+        System.out.println( a + "%" + b + "=" + a%b );
+        
+        // 2. 1에서 100까지의 숫자 중 3의 배수만 출력하는 프로그램을 작성하세요.
+
+        // 3. 키보드에서 한 개의 정수를 입력받아, 입력한 수가 소수(prime number)인지 아닌지 판별하는 프로그램을 작성하세요.
 
     }//main
 }
