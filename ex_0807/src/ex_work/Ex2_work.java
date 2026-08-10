@@ -24,12 +24,21 @@ public class Ex2_work {
         System.out.print("단 : ");
         int dan = sc.nextInt();
 
-        for( int i = 1; i <= 9; i++ ){
+        //내가 푼 방법
+        /*for( int i = 1; i <= 9; i++ ){
             System.out.println(dan+"*"+i+"="+ dan*i  );
 
-        }
+        }*/
+        //쌤이 알려주신 방법
+        if( dan <= 1 || dan >= 10 ){
+            System.out.println("2 ~ 9사이의 값을 넣으세요");
+        }else{
+            for( int i = 1; i <= 9; i++ ){
+                System.out.printf( "%d * %d = %02d\n",dan, i, (dan*i)  ); //formatter 활용해서 문제 다르게 풀어봄
 
-            
+            }//for
+
+        }
         
         
 

@@ -26,12 +26,12 @@ public class Ex1_work {
         Scanner sc = new Scanner(System.in);
 
         System.out.print( "연도 : ");
-        int i = sc.nextInt();
-
-        if( i % 4 == 0 && i % 100 != 0 ){
-            System.out.println(i + "년은 윤년입니다");
-        }else if( i % 4 == 1 && i % 100 == 0 ){
-            System.err.println(i + "년은 평년입니다");
+        int year = sc.nextInt();
+        boolean res = year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
+        if(res == true){ // if(!res) -> if(res == false) 이런 형식으로 줄여서 사용 가능
+            System.out.println(year + "년은 윤년입니다");
+        }else{
+            System.err.println(year + "년은 평년입니다");
         }
 
 
