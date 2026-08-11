@@ -7,16 +7,29 @@ public class Ex7_multifor {
         // ....
         // 2 x 9 = 18 3 x 9 = 27 .........9 x 9 = 81
 
+        // 내가 푼거
         for (int i = 1; i <= 9; i++) {
 
             for (int j = 2; j <= 9; j++) {
                 // if (i <= j) {
-                System.out.print(j + " x " + i + " = " + j * i + " ");
+                System.out.print(j + " x " + i + " = " + j * i + "    ");
                 // }
 
             } // inner
 
             System.out.println();
+
+        } // outer
+
+        // 쌤이 알려주신 방법
+        for (int i = 1; i <= 9; i++) {
+
+            for (int j = 2; j <= 9; j++) {
+                System.out.printf("%d X %d = %d\t", j, i, j * i);
+
+            } // inner
+
+            System.out.println();   
 
         } // outer
 

@@ -14,20 +14,31 @@ public class Ex8_multifor {
 
         for (int i = 1; i <= 10; i++) {
 
-            for (int j = 1; j <= 10; j++) {
-                
-                if( i <= j && j <= 10 ){
-                    System.out.print(j);
-                    
-                }else if( j >= 10 ){
-                    
-                }
+            for (int j = 0; j < 10; j++) {
+                System.out.print((i + j - 1) % 10 + 1 + " ");
 
+            }
 
-            } // inner
             System.out.println();
-       
+
         } // outer
+        System.out.println("------------------------------");
+
+        // 쌤이 알려주신 방법
+        for (int i = 1; i <= 10; i++) {
+
+            for (int j = 0; j < 10; j++) {
+                int num = i + j;
+
+                if (num > 10)
+                    num -= 10; // 한줄만 실행하는거면 중괄호 안넣어도된다
+
+                System.out.print(num + " ");
+            }
+
+            System.out.println();
+
+        }
 
     }
 
