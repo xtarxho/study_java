@@ -1,5 +1,7 @@
 package ex6_work;
 
+import java.util.Scanner;
+
 public class Ex6_work {
     public static void main(String[] args) {
         
@@ -10,6 +12,23 @@ public class Ex6_work {
         //----------------------
         //입력 : 7 (키보드에서 7 입력 받으면 7개까지 나오면 됨 13까지)
         //1 1 2 3 5 8 13 21 34 55 -> 피보나치수열
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print( "입력 : " );
+        int cnt = sc.nextInt();
+
+        int n1 = 1;
+        int n2 = 0;
+        int n3 = 0;
+
+            for( int i = 0; i < cnt; i++ ){
+                
+                n2 = n3;
+                n3 = n1;
+                n1 = n2 + n3;
+                System.out.print( n3 + " " );
+
+            }
 
 
 
