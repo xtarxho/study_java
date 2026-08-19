@@ -16,21 +16,22 @@ public class Ex1_work {
 
         Scanner sc = new Scanner(System.in);
         System.out.print( "입력 : " );
+        
+        //원본
         String str = sc.next();
 
+        StringBuffer sb = new StringBuffer(str); //이해필요
+
+        //원본을 뒤집어서 저장할 객체
+        String rev = sb.reverse().toString();  //이해필요
         
-        for( int i = 0; i < str.length(); i++ ){
-                if(str.charAt(i) == str.charAt(str.length() - 1 - i )){
-                    
-                    
-                }else{
-                    
-                    System.out.println(str + "은(는) 회문이 아닙니다");
-                }
-                System.out.println(str + "은(는) 회문입니다");
-                
-                
-                
+        // for( int i = str.length()-1; i >= 0; i-- ){
+        //     rev += str.charAt(i);                      
+        //     }
+            if (str.equals(rev)) { //str이랑 rev의 값이 같은지 검색하는 방법
+                System.out.println(str + "은 회문");
+            }else{
+                System.out.println(str + "은 안회문");
             }
 
     }//main
