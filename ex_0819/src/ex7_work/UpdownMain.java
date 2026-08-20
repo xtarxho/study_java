@@ -1,6 +1,5 @@
 package ex7_work;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class UpdownMain {
@@ -17,16 +16,38 @@ public class UpdownMain {
         //정수 : 25
         //3회 만에 정답
 
-        
-        
-        int num = new Random().nextInt(50) +1;
-        int su = 0;
-        int cnt = 0;
+        // 내가 푼 방법
+        // int num = new Random().nextInt(50) +1;
+        // int su = 0;
+        // int cnt = 0;
         
 
+        // UpdowmSub us = new UpdowmSub();
+        // String res = us.Updowm(su, num, cnt);
+        // System.out.println(res);
+
+
+
+
+        //쌤이 풀어주신 방법
+        Scanner sc = new Scanner(System.in);
+        int select = 0; //키보드에서 입력받은 값 저장용 변수
+        boolean check; //초기화를 안하면 기본값이 false로 된다
+
         UpdowmSub us = new UpdowmSub();
-        String res = us.Updowm(su, num, cnt);
-        System.out.println(res);
+
+        do{
+
+            System.out.print("정수 : ");
+            select = sc.nextInt();
+            check = us.check(select);
+
+        }while( check ); //check가 true가 맞냐는 뜻
+
+        
+
+
+
 
 
 
