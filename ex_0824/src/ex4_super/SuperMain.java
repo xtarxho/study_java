@@ -5,6 +5,7 @@ public class SuperMain {
         
         Child c1 = new Child();
         
+        System.out.println(c1.getNum());
 
     }//main
 }
