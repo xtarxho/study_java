@@ -21,7 +21,7 @@ public class Ex5_oper {
         a = 10;
         b = 12;
         char res3 = ++a >= b || (a - 8) + 7 <= b && 13 - b >= 0 && (a+=b) - (a%b) > 10 ? 'O' : 'X'; //++a 였을때 11로 바뀌는 함정, (a+=b)에서 a가 23으로 바뀜, (a%b)는 a가 23이 됨
-        // false              true || true        &&  true
+        
         System.out.println("res3 : " + res3);
     }// main
 }
