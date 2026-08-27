@@ -28,8 +28,9 @@ public class Ex2_Work {
         for( int i = 1; i <= 9; i++ ){
 
             
-            if (dan < 2 || dan > 10) {
+            if (dan < 2 || dan >= 10) {
                 System.out.println("2~9사이의 값 입력바람");
+                break;
             }else{
                 System.out.printf( "%d * %d = %d\n",dan, i, dan*i );
 
