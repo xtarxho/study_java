@@ -38,12 +38,12 @@ public class Ex4_work {
         int su3 = sc.nextInt();
         System.out.print("수2 : ");
         int su4 = sc.nextInt();
-        /* 
+        
         if (su3 > su4) {
             int su5 = su3;
             su3 = su4;
-            su4 = su5;
-
+            su4 = su5;            
+        }
             int i = su3;
 
             for (; i >= 1; i--){
@@ -54,20 +54,20 @@ public class Ex4_work {
             }
 
             System.out.println("최대공약수 : " + i);
-        }
-*/
+        
+
         System.out.println("-------------------------------");
 
         //유클리드 호제법으로 최대공약수 구하기
-        while(su4 != 0){
+        // while(su4 != 0){
             
             
-            int tmp = su3 % su4;
-            su3 = su4;
-            su4 = tmp;
+        //     int tmp = su3 % su4;
+        //     su3 = su4;
+        //     su4 = tmp;
 
-        }
-        System.out.println("최대공약수 : " + su3);
+        // }
+        // System.out.println("최대공약수 : " + su3);
 
 
     }// main

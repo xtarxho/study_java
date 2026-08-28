@@ -20,23 +20,23 @@ public class Ex5_work {
         System.out.print("수2 : ");
         int su2 = sc.nextInt();
 
-        /*
+        
         for( int i = 1; i <= su1; i++){
 
             if( su1 * i % su2 == 0 ){
                 System.out.printf( "최소공배수 : %d" , su1 * i );
             }
         }
-        System.out.println(); */
+        System.out.println(); 
 
-        for( int i = 1; i <= su1 * su2; i++){
+        // for( int i = 1; i <= su1 * su2; i++){
 
-            if( i % su1 == 0 && i % su2 == 0 ){
-                System.out.println("최소공배수 : " + i);
-                break;
-            }
+        //     if( i % su1 == 0 && i % su2 == 0 ){
+        //         System.out.println("최소공배수 : " + i);
+        //         break;
+        //     }
 
-        }
+        // }
 
         System.out.println("--------------------------------");
 
