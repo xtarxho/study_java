@@ -21,15 +21,13 @@ public class Ex5_Work {
         System.out.print("수2 : ");
         int su2 = sc.nextInt();
 
-        for( int i = 1; i <= su1 * su2; i++ ){
-
-            if (i % su1 == 0 && i % su2 == 0) {
-                System.out.println("최소공배수 : " + i);
+        for( int i = 1; i <= su1; i++ ){
+            if (su1 * i % su2 == 0) {
+                System.out.println(su1 * i);
                 break;
             }
 
         }
-
 
 
     }// main

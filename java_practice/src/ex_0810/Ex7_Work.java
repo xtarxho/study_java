@@ -22,17 +22,16 @@ public class Ex7_Work {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print( "입력 : " );
+        System.out.print("입력 : ");
         int n = sc.nextInt();
 
         for( int i = 1; i <= n; i++ ){
-
             if (i % 5 == 0 || i % 10 == 3) {
                 continue;
             }
             System.out.println(i);
         }
-
+        
 
     }// main
 }

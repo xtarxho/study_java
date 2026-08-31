@@ -16,22 +16,22 @@ public class Ex4_Work {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print( "수1 : " );
+        System.out.print("수1 : ");
         int su1 = sc.nextInt();
-        System.out.print( "수2 : " );
+
+        System.out.print("수2 : ");
         int su2 = sc.nextInt();
-        
+
         if (su1 > su2) {
             int tmp = su1;
             su1 = su2;
             su2 = tmp;
         }
 
-        int i = su1;
-        for(; i < su2; i--){
+        for( int i = su1; i <= su2; i-- ){
 
-            if (su1 % i == 0 && su2 % i == 0) {
-                System.out.println("최대공약수 : " + i);
+            if (su2 % i == 0 && su1 % i == 0) {
+                System.out.println(i);
                 break;
             }
 

@@ -11,16 +11,13 @@ public class Ex1_Work {
 
         System.out.print("입력 : ");
         int n = sc.nextInt();
-
-        char[] carr = new char[n];
-        char ch = 'A';
-
+        char[] ch = new char[n];
+        
         for( int i = 0; i < n; i++ ){
-            System.out.print( carr[i] = ch++ );
+            ch[i] = (char)('A' + i);
+            System.out.print(ch[i]);
 
         }
-
-
-
+        
     }
 }
