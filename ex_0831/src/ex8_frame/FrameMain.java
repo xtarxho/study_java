@@ -6,7 +6,8 @@ import java.awt.event.*;
 public class FrameMain {
     public static void main(String[] args) {
         
-        //숙제 1
+        //클래스 안나누고 만들기
+        //숙제 1 : 창 닫기 이벤트 추가 -> 종료 확인 창 띄우기 -> 종료 확인 창에서 네 버튼 누르면 종료, 아니오 버튼 누르면 창 닫기
         Frame f = new Frame("메모장");
 
         f.setLayout(null);
