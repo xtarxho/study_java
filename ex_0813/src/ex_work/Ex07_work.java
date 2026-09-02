@@ -60,12 +60,5 @@ public class Ex07_work {
 
         }//outer
 
-
-
-
-
-
-
-
     }// main
 }
