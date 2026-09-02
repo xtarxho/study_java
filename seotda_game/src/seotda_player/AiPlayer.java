@@ -2,8 +2,8 @@ package seotda_player;
 
 public class AiPlayer extends Player{
     
-    public AiPlayer(String name){
-        super(name);
+    public AiPlayer(String name, int money){
+        super(name, money);
         
     }
 
