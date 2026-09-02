@@ -24,14 +24,15 @@ public class Ex1_work {
         //2021년은 평년입니다
 
         Scanner sc = new Scanner(System.in);
+        System.out.print( "연도 : " );
+        int n = sc.nextInt();
 
-        System.out.print( "연도 : ");
-        int year = sc.nextInt();
-        boolean res = year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
-        if(res == true){ // if(!res) -> if(res == false) 이런 형식으로 줄여서 사용 가능
-            System.out.println(year + "년은 윤년입니다");
+        boolean res = n % 4 == 0 && n % 100 != 0 || n % 400 == 0;
+        if( res ){
+            System.out.println(n + "년은 윤년입니다");
+
         }else{
-            System.err.println(year + "년은 평년입니다");
+            System.out.println( n + "년은 평년입니다");
         }
 
 
