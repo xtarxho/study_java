@@ -11,26 +11,32 @@ public class Ex3_Work {
         // 결과 : 10
 
         int[][] arr = { { 3, 1, 4, 7 },
-                        { 10, 2, 9, 3, 8 },
-                        { 7, 4, 1 } };
+                { 10, 2, 9, 3, 8 },
+                { 7, 4, 1 } };
 
         Scanner sc = new Scanner(System.in);
 
         System.out.print("입력 : ");
         int num = sc.nextInt();
-        out : for( int i = 0; i < arr.length; i++ ){
 
-            for( int j = 0; j < arr[i].length; j++ ){
+        int big = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+
+            for (int j = 0; j < arr[i].length; j++) {
 
                 if (num < arr[i][j]) {
-                    System.out.println("결과 : " + arr[i][j]);
-                    break out;
+
+                    if (big == 0 || arr[i][j] < big) {
+                        big = arr[i][j];
+                    }
+
                 }
 
             }
 
         }
+        System.out.println("결과 : " + big);
 
-    
     }// main
 }
