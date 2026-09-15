@@ -12,43 +12,43 @@ public class Ex03_work {
         System.out.print("입력 : ");
         int q = sc.nextInt();
 
-        int big = 0;
+        // int big = 0;
         int[][] arr = { { 3, 1, 4, 7 },
                 { 10, 2, 9, 3, 8 },
                 { 7, 4, 1 } };
 
-        out: for (int i = 0; i < arr.length; i++) {
+        // out: for (int i = 0; i < arr.length; i++) {
 
-            for (int j = 0; j < arr[i].length; j++) {
+        //     for (int j = 0; j < arr[i].length; j++) {
 
-                if (arr[i][j] > q) {
-                    big = arr[i][j];
-                    break out;
-                }
+        //         if (arr[i][j] > q) {
+        //             big = arr[i][j];
+        //             break out;
+        //         }
 
-            }
+        //     }
 
-        }
-        System.out.printf("결과 : %d", big);
+        // }
+        // System.out.printf("결과 : %d", big);
 
-        /*
-         * //쌤이 알려주신 방법
-         * out : for( int i = 0; i < arr.length; i++ ){
-         * 
-         * for( int j = 0; j < arr[i].length; j++ ){
-         * 
-         * if(arr[i][j] > q){
-         * System.out.println("결과 : " + arr[i][j]);
-         * break out;
-         * }
-         * 
-         * 
-         * }
-         * 
-         * 
-         * }
-         * 
-         */
+        
+         //쌤이 알려주신 방법
+         out : for( int i = 0; i < arr.length; i++ ){
+         
+         for( int j = 0; j < arr[i].length; j++ ){
+         
+         if(arr[i][j] > q){
+         System.out.println("결과 : " + arr[i][j]);
+         break out;
+         }
+         
+         
+         }
+         
+         
+         }
+         
+         
 
     }// main
 }
