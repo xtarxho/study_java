@@ -20,7 +20,8 @@ public class Ex3_String {
                 
                 System.out.println( "남자입니다");
 
-            }else{System.out.println("여자입니다");
+            }else{
+                System.out.println("여자입니다");
 
             }
 

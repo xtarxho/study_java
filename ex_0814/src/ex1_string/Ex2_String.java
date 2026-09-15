@@ -40,7 +40,7 @@ public class Ex2_String {
 
         //문자열로 작성된 숫자형태의 데이터를 실제 숫자로 바꿔주는 메서드
         String number = "100";
-        int num = Integer.parseInt(number);                //String은 정수타입한테 값을 주지 못함 
+        int num = Integer.parseInt(number);   //String은 정수타입한테 값을 주지 못함 
         System.out.println( num + 1 );
 
         //int라는 자료형을 클래스 형태로 사용하고 싶을때 Integer를 사용한다

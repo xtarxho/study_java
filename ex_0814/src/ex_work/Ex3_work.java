@@ -11,25 +11,6 @@ public class Ex3_work {
         //입력 : wefwefwxcxaweagd
         //a의 갯수 : 2
 
-
-        //내가 푼거 틀림
-        // Scanner sc = new Scanner(System.in);
-        // System.out.print( "입력 : " );
-        // String n = sc.next();
-
-        // int cnt = 0;
-        // for( int i = 0; i <= n.length(); i++ ){
-        //     for( int j = 0; j <= n.length(); j++ ){
-        //         if ( i == j ) {
-        //             cnt ++;
-                    
-        //         }
-        //     }
-        //     break;
-        // }
-        // System.out.println("a의 갯수 : " + cnt);
-
-
         //쌤이 알려주신 방법
         Scanner sc = new Scanner(System.in);
         int cnt = 0;
