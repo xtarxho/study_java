@@ -11,22 +11,18 @@ public class Ex9_Work {
         // -------------------
         // 17 2 45 27 9 11
 
-        int[] lotto = new int[6];
-
         Random rnd = new Random();
 
-        out : for( int i = 0; i < lotto.length;  ){
+        int[] lotto = new int[6];
 
-            lotto[i] = rnd.nextInt(45) + 1;
-
-            for( int j = 0; j < i; j++ ){
-
-                if (lotto[i] == lotto[j]) {
+        out : for (int i = 0; i < lotto.length; ) {
+            lotto[i] = rnd.nextInt(45)+1;
+            for (int j = 0; j < i; j++) {
+                if(lotto[i] == lotto[j]){
                     continue out;
                 }
-
             }
-
+            
             System.out.print(lotto[i] + " ");
             i++;
         }

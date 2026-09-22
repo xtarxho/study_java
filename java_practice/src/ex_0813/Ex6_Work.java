@@ -24,12 +24,13 @@ public class Ex6_Work {
          */
 
         Scanner sc = new Scanner(System.in);
-        System.out.print("등록 인워 수 : ");
+
+        System.out.print("등록 인원 수 : ");
         int n = sc.nextInt();
 
-        String[] info = {"이름 : ", "수학 : ", "영어 : ", "국어 : "};
+        String[] info = {"이름 : ", "수학 : ", "영어 : "};
         String[][] str = new String[n][info.length];
-
+        
         for( int i = 0; i < str.length; i++ ){
 
             for( int j = 0; j < str[i].length; j++ ){
@@ -38,10 +39,11 @@ public class Ex6_Work {
                 str[i][j] = sc.next();
 
             }
-            System.out.println("---------------------------");
+            System.out.println("-----------------");
+
         }
-        System.out.printf("총%d명의 학생 정보 등록됨\n",n);
-        System.out.println("[ 학생 등록 정보 ]");
+        System.out.printf("총%d명의 학생 정보등록\n",n);
+        System.out.println("[학생 등록정보]");
 
         for( int i = 0; i < str.length; i++ ){
 
@@ -52,6 +54,8 @@ public class Ex6_Work {
             }
             System.out.println();
         }
+
+
 
     }//main
 }
